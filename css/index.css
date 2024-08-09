@@ -1,0 +1,198 @@
+.top-nav-logo > img {
+    height: 45px;
+    width: 72px;
+    object-fit: contain;
+}
+
+.top-main-nav {
+    height: 67px;
+    background-color: white !important;
+}
+
+.top-nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.nav-email,
+.nav-phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav-email {
+    width: 45%;
+}
+
+.nav-phone {
+    width: 40%;
+}
+
+.nav-email-icon > i,
+.nav-phone-icon > i {
+    line-height: 1;
+    font-size: 35px;
+    color: #00B0ED;
+}
+
+.nav-email-text-1,
+.nav-phone-text-1 {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.nav-email-text-2,
+.nav-phone-text-2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+.nav-top-btn {
+    width: 15%;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #00B0ED;
+    padding: 7px 12px;
+    color: white;
+	border:transparent !important;
+}
+
+@media (max-width: 992px) {
+	
+ 
+	
+	
+	.top-nav-logo > img {
+    height: 49px;
+    width: 72px;
+    object-fit: contain;
+}
+	
+	
+    .top-main-nav {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-email,
+    .nav-phone {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-top-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*** Topbar End  ***/
+
+.pages-nav{
+	
+	background: #00B0ED !important;
+   
+    
+   
+ 
+}
+@media (min-width: 991.98px) {
+.navbar-light{
+height:70px !important;
+
+}	
+	
+	
+	
+}
+
+@media (max-width: 992px) {
+	
+	.pages-nav {
+     background: white !important; 
+}
+
+}
+
+/*** Pages Navbar  End  ***/
+
+
+
+@media (min-width: 991.98px) {
+.carousel-main{
+top:45px !important;
+    height: 490px !important;
+
+}
+.carousel-inner{
+	
+	height: 100% !important;
+}
+	
+	
+	
+}
+
+
+.main-about {
+   background-color: rgba(0, 176, 237, 0.7); /* Semi-transparent color */
+    background-image: url(https://hashtron.com/wp-content/uploads/2022/09/section-banner-55-.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply; /* Blends the image with the color */
+}
+
+
+
+
+
+
+.about-desc-title{
+	
+	
+	color:#00B0ED;
+}
+
+@media (min-width: 991.98px) {
+.about-row{
+	height:400px !important;
+	
+	
+}
+
+.about-desc{
+	
+height: 448px !important;	
+	
+}
+	
+}
+
+@media (max-width: 992px) {
+	
+	.about-desc{
+	
+height: 650px !important;	
+	
+}
+
+}
+
+ .fa-star{
+	 
+	 color:#00B0ED !important;
+ }
