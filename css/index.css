@@ -70,7 +70,9 @@
 
 @media (max-width: 991px) {
 	
- 
+ .nav-logo > img {
+	 height:55px;
+ }
 	
 	 
 	
