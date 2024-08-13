@@ -157,7 +157,7 @@
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
-  padding: 22px 15px;
+  padding: 14px 15px;
     color: var(--bs-white) !important;
     font-size: 17px;
     font-weight: 400;
@@ -166,14 +166,14 @@
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 22px 15px;
-    color: var(--bs-dark) !important;
+    padding: 14px 15px;
 }
-
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
    color: #00B0ED !important;
 }
+
+
 
 .navbar-light .navbar-brand h1 {
     color: var(--bs-white);
@@ -202,6 +202,10 @@
 }
 
 @media (min-width: 1200px) {
+	
+
+	
+	
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -229,6 +233,14 @@
 }
 
 @media (max-width: 991.98px) {
+	
+	
+		.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+   color: #00B0ED !important;
+   background: #00B0ED !important;
+}
+	
     .sticky-top.navbar-light {
         position: relative;
         background: var(--bs-white);
@@ -407,7 +419,8 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
+	
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/about-banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,10 +458,11 @@
 /*** Services Start ***/
 .service .service-content-inner {
     transition: 0.5s;
+	border: 2px solid #00B0ED !important;
 }
 .service .service-content-inner:hover {
     position: relative;
-    background: var(--bs-primary) !important;
+    background: #00B0ED !important;
 }
 
 .service .service-content-inner .service-content h5,
@@ -461,6 +475,10 @@
 .service .service-content-inner:hover .service-content p,
 .service .service-content-inner:hover .service-icon i {
     color: var(--bs-white) !important;
+}
+
+.service-icon > i {
+	color : #00B0ED !important;
 }
 /*** Service End ***/
 
@@ -1097,94 +1115,50 @@
 /*** Blog End ***/
 
 /*** Testimonial Start ***/
-.testimonial .testimonial-carousel {
-    position: relative;
-}
-
-.testimonial .testimonial-carousel .testimonial-item .testimonial-img {
-    position: relative;
-    width: 100px; 
-    height: 100px; 
-    top: 0; left: 50%; 
-    transform: translate(-50%, -50%);
-    border: 3px solid var(--bs-primary); 
-    border-style: dotted;
-    border-radius: 50%;
-}
-
-.testimonial .testimonial-carousel .owl-dots {
-    margin-top: 30px;
+.brand-carousel {
     display: flex;
     align-items: center;
-    justify-content: center;
-	
-	display:none;
+    justify-content: space-between;
 }
 
-.testimonial .testimonial-carousel .owl-dot {
-    position: relative;
+.brand-item img {
+    max-width: 100px; /* Adjust size as needed */
+    margin: 0 15px;
+    transition: filter 0.3s ease-in-out;
+}
+.brand-carousel .brand-item img {
+    width: auto; /* Maintain aspect ratio */
+    height: 80px; /* Set consistent height */
+    object-fit: contain; /* Scale the image to fit without distorting */
+    margin: 0 auto; /* Center align the image */
+    display: block; /* Ensure the image is treated as a block-level element */
+}
+
+.brand-item img:hover {
+    filter: none; /* Restores original color on hover */
+}
+
+.owl-nav {
+    display: none; /* Hides navigation buttons if using Owl Carousel */
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
     display: inline-block;
+    width: 10px;
+    height: 10px;
     margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    background: var(--bs-light);
-    border: 1px solid var(--bs-primary);
-    border-radius: 10px;
-    transition: 0.5s;
+    background: #ddd;
+    border-radius: 50%;
+    transition: background 0.3s;
 }
 
-.testimonial .testimonial-carousel .owl-dot.active {
-    width: 40px;
-    background: var(--bs-primary);
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev {
-    position: absolute;
-    top: -55px;
-    left: 0;
-    padding: 5px 30px;
-    border: 1px solid var(--bs-primary);
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-next {
-    position: absolute;
-    top: -55px;
-    right: 0;
-    padding: 5px 30px;
-    border: 1px solid var(--bs-primary);
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev i,
-.testimonial .testimonial-carousel .owl-nav .owl-next i {
-    color: var(--bs-primary);
-    font-size: 17px;
-    transition: 0.5s;
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-primary);
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev:hover i,
-.testimonial .testimonial-carousel .owl-nav .owl-next:hover i {
-    color: var(--bs-white);
-}
-
-.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-comment {
-    background: var(--bs-primary) !important;
-    color: var(--bs-white);
-    transition: 0.5s;
-}
-
-.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-img {
-    border: 3px solid var(--bs-white); 
-    border-style: dotted;
-    transition: 0.5s;
+.owl-dot.active {
+    background: #000;
 }
 /*** Testimonial End ***/
 
@@ -1201,7 +1175,7 @@
 
 /*** Subscribe Start ***/
 .subscribe {
-    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/subscribe-img.jpg);
+    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/about-banner.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;

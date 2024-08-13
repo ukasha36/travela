@@ -27,6 +27,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+		 <link href="css/index.css" rel="stylesheet">
     </head>
 
     <body>
@@ -39,74 +40,67 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                    </div>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block top-main-nav">
+        <div class="row gx-0 top-nav-row">
+            <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 ">
+                <div class="d-inline-flex align-items-center top-nav-logo">
+                    <img src="transparent.png" class="img-fluid object-contain top-nav-logo" alt="Image">
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
-                            </div>
+            </div>
+            <div class="col-lg-7 text-center text-lg-end h-100">
+                <div class="d-inline-flex align-items-center w-100 h-100">
+                    <div class="nav-email">
+                        <div class="nav-email-icon">
+                            <i class="fa fa-envelope-open"></i>
                         </div>
+                        <div class="nav-email-text">
+                            <div class="nav-email-text-1">Email Support</div>
+                            <div class="nav-email-text-2">sales@securifysolution.com</div>
+                        </div>
+                    </div>
+                    <div class="nav-phone">
+                        <div class="nav-phone-icon">
+                            <i class="fa fa-phone-alt"></i>
+                        </div>
+                        <div class="nav-phone-text">
+                            <div class="nav-phone-text-1">Call Support</div>
+                            <div class="nav-phone-text-2">+971 000000000</div>
+                        </div>
+                    </div>
+                    <div class="nav-top-btn">
+                        <button href="" class="btn">Get Quote</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Topbar End -->
+    </div>
+    <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="packages.html" class="nav-item nav-link">Packages</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="tour.html" class="dropdown-item">Explore Tour</a>
-                                <a href="booking.html" class="dropdown-item">Travel Booking</a>
-                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                                <a href="guides.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+   <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 pages-nav">
+		<div class="d-inline-flex align-items-center nav-logo">
+                    <img src="transparent.png" class="img-fluid object-contain navbar-logo" alt="Image">
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="Services.html" class="nav-item nav-link">Services</a>
+					 <a href="products.html" class="nav-item nav-link">Products</a>
+                    <a href="categories.html" class="nav-item nav-link">Categories</a>
+                    <a href="brands.html" class="nav-item nav-link">Brands</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                 
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
 
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
@@ -121,38 +115,38 @@
         </div>
         <!-- Header End -->
 
-        <!-- About Start -->
-        <div class="container-fluid about py-5">
+         <!-- About Start -->
+        <div class="container-fluid about py-5 main-about">
             <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5">
+                <div class="row g-5 align-items-center about-row">
+                    <div class="col-lg-6 h-100 ">
                         <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
                             <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
-                        <h5 class="section-about-title pe-3">About Us</h5>
-                        <h1 class="mb-4">Welcome to <span class="text-primary">Travela</span></h1>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda? Id atque iste consectetur. Commodi odit ab saepe!</p>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?</p>
+                    <div class="col-lg-6 about-desc" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                        <h5 class="section-about-title pe-3"></h5>
+                        <h1 class="">Welcome to <span class="about-desc-title">SECURIFY SOLUTION</span></h1>
+                        <p class="mb-4">Your trusted Partner in safety, precision and innovation. We are dedicated to provided top-notch solution in safety products, testing and measuring equipment, industrial communication devices and smart home automation system. With a commitment to excellence, we strive to create a safer more efficient and technologically advance environment for our clients.</p>
+                        <p class="mb-4"></p>
                         <div class="row gy-2 gx-4 mb-4">
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Safety Products</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Testing & Measuring Equipments</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Welding Equipments</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Security Systems</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Communications Equipments</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Smart Home Automation</p>
                             </div>
                         </div>
                         <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
@@ -161,6 +155,51 @@
             </div>
         </div>
         <!-- About End -->
+		
+		  <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Our Competitive Edge</h5>
+                    
+                </div>
+				
+				<div Class="Competitive-main" >
+                <div Class="col-lg-3 Competitive-sec-1">
+				 <div Class="" >
+				<img src="img/customer-icon.png" alt="Logo">
+				</div>
+				 <div>
+				<h3 Class="" >Customer Focused</h3>
+				<p Class="" >At SECURIFY we have the highest levels of customization in our products and services to focus on the customer needs and suit their requirements.</p>
+				</div>
+				</div>
+				
+				<div Class="col-lg-3 Competitive-sec-2">
+				 <div Class="" >
+				<img src="img/quality.png" alt="Logo">
+				</div>
+				 <div>
+				<h3>Super Quality</h3>
+					<p>More than 70 percent of the products are manufactured under Six Sigma and are tested and certified to different norms like American, Australian, Canadian, European, Singapore and also Indian Standards.&nbsp;</p>				</div>
+				</div>
+				
+				
+				<div Class="col-lg-3 Competitive-sec-3">
+				 <div Class="" >
+				<img src="img/innovation.png" alt="Logo">
+				</div>
+				 <div>
+			<h3>Innovation</h3>			
+			<p>A dedicated Research and Development team solely focusing on incremental as well as radical innovation that forms a key source of competitive advantage for SECURIFY.&nbsp;</p>				</div>
+				</div>
+				
+				</div>
+				
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
 
         <!-- Travel Guide Start -->
         <div class="container-fluid guide py-5">

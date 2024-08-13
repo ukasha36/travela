@@ -1,11 +1,11 @@
 .top-nav-logo > img {
-    height: 45px;
-    width: 72px;
+   height: 78px;
+    width: 73px;
     object-fit: contain;
 }
 
 .top-main-nav {
-    height: 67px;
+   height: 81px;
     background-color: white !important;
 }
 
@@ -68,17 +68,11 @@
 	border:transparent !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	
  
 	
-	
-	.top-nav-logo > img {
-    height: 49px;
-    width: 72px;
-    object-fit: contain;
-}
-	
+	 
 	
     .top-main-nav {
         display: block;
@@ -111,9 +105,14 @@
 }
 @media (min-width: 991.98px) {
 .navbar-light{
-height:70px !important;
+height:55px !important;
 
 }	
+
+
+	.navbar-logo{
+		display:none;
+	}
 	
 	
 	
@@ -133,7 +132,7 @@ height:70px !important;
 
 @media (min-width: 991.98px) {
 .carousel-main{
-top:45px !important;
+top:55px !important;
     height: 490px !important;
 
 }
@@ -196,3 +195,89 @@ height: 650px !important;
 	 
 	 color:#00B0ED !important;
  }
+ 
+ 
+ 
+ 
+ .Competitive-main{
+	 
+	 display:flex ; 
+	 gap:20px;
+	 flex-flow: wrap;
+}
+ 
+ 
+ 
+ .Competitive-sec-1 {
+    border: 1px solid #00B0ED;
+    padding: 10px 20px 12px 20px;
+    min-height: 330px;
+    box-shadow: 0px 2px 10px #ccc;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Competitive-sec-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px #00B0ED;
+}
+.Competitive-sec-2 {
+    border: 1px solid #00B0ED;
+    padding: 10px 20px 12px 20px;
+    min-height: 330px;
+    box-shadow: 0px 2px 10px #ccc;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Competitive-sec-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px #00B0ED;
+}
+
+.Competitive-sec-3 {
+    border: 1px solid #00B0ED;
+    padding: 10px 20px 12px 20px;
+    min-height: 330px;
+    box-shadow: 0px 2px 10px #ccc;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Competitive-sec-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px #00B0ED;
+}
+
+
+
+
+@media (min-width: 992px) {
+	.bg-breadcrumb {
+	position:relative;
+	top: 55px ;
+    
+}
+
+}
+
+
+.contact-icons{
+	color:#00B0ED !important;
+	
+}
