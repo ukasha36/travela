@@ -316,13 +316,11 @@
     }
 }
 
+
 /*** Carousel Hero Header Start ***/
 .carousel-header .carousel-control-prev,
 .carousel-header .carousel-control-next {
-    z-index: 10; /* Ensure they are above other elements */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: transparent;
 }
 
 .carousel-header .carousel-control-prev .carousel-control-prev-icon {
@@ -349,28 +347,36 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 0;
     background-size: 60% 60%;
-
 }
 
-.carousel-header .carousel .carousel-indicators li,
-.carousel-header .carousel .carousel-indicators li,
 .carousel-header .carousel .carousel-indicators li {
-     opacity: 1;
+    opacity: 0;
 }
 
 .carousel-header .carousel-inner .carousel-item {
     position: relative;
-    min-height: 100vh 
+    min-height: 100vh;
 }
 
 .carousel-header .carousel-inner .carousel-item img {
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
 }
+.carousel-caption{
+	position: absolute;
+    right: 15%;
+    top: 10.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+}
 
-.carousel-header .carousel-inner .carousel-item .carousel-caption  {
+.carousel-header .carousel-inner .carousel-item .carousel-caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -383,17 +389,6 @@
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
     background-size: cover;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    top: 10rem !important;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -409,7 +404,7 @@
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon,
     .carousel-header .carousel-control-next .carousel-control-next-icon {
-        opacity: 1;
+        opacity: 0;
     }
     
     .search-bar {
@@ -418,7 +413,6 @@
     }
 }
 /*** Carousel Hero Header End ***/
-
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
@@ -435,6 +429,7 @@
     color: var(--bs-secondary) !important;
 }
 /*** Single Page Hero Header End ***/
+
 
 
 /*** About Start ***/
@@ -482,6 +477,50 @@
 
 .service-icon > i {
 	color : #00B0ED !important;
+}
+/*** Service End ***/
+
+
+/*** About Start ***/
+.about .container .section-about-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+}
+
+.about .container .section-about-title::before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -50px;
+    border: 1px solid var(--bs-primary) !important;
+}
+/*** About End ***/
+
+
+/*** Services Start ***/
+.service .service-content-inner {
+    transition: 0.5s;
+}
+.service .service-content-inner:hover {
+    position: relative;
+    background: var(--bs-primary) !important;
+}
+
+.service .service-content-inner .service-content h5,
+.service .service-content-inner .service-content p,
+.service .service-content-inner .service-icon i {
+    transition: 0.5s;
+}
+
+.service .service-content-inner:hover .service-content h5,
+.service .service-content-inner:hover .service-content p,
+.service .service-content-inner:hover .service-icon i {
+    color: var(--bs-white) !important;
 }
 /*** Service End ***/
 
@@ -555,8 +594,9 @@
 /*** Destination End ***/
 
 
+
 /*** Packages Start ***/
-.carousel-item {
+#carouselExampleControls .carousel-item {
     display: flex;
     justify-content: space-between;
 }
@@ -616,7 +656,6 @@
     left: 0;
     z-index: 5;
 }
-
 /*** Packages End ***/
 
 
@@ -1206,7 +1245,7 @@
 
 /*** Subscribe Start ***/
 .subscribe {
-    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/about-banner.jpg);
+    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/subscribe-img.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
