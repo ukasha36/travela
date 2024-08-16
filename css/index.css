@@ -134,8 +134,9 @@ height:55px !important;
 
 @media (min-width: 991.98px) {
 .carousel-main{
-top:55px !important;
-    height: 490px !important;
+	position:relative;
+		top:55px !important;
+    height: 759px !important;
 
 }
 .carousel-inner{
