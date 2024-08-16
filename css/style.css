@@ -319,7 +319,10 @@
 /*** Carousel Hero Header Start ***/
 .carousel-header .carousel-control-prev,
 .carousel-header .carousel-control-next {
-    background: transparent;
+    z-index: 10; /* Ensure they are above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-header .carousel-control-prev .carousel-control-prev-icon {
@@ -352,7 +355,7 @@
 .carousel-header .carousel .carousel-indicators li,
 .carousel-header .carousel .carousel-indicators li,
 .carousel-header .carousel .carousel-indicators li {
-    opacity: 0;
+     opacity: 1;
 }
 
 .carousel-header .carousel-inner .carousel-item {
@@ -406,7 +409,7 @@
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon,
     .carousel-header .carousel-control-next .carousel-control-next-icon {
-        opacity: 0;
+        opacity: 1;
     }
     
     .search-bar {
