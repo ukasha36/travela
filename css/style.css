@@ -408,13 +408,17 @@
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    padding: 9px 33px;
+    padding: 7px 33px;
     color: var(--bs-white) !important;
     font-size: 26px;
     font-weight: 400;
     outline: none;
     transition: .5s;
 }	
+
+
+
+
 }
  
 
@@ -458,6 +462,14 @@
     color: #fff;
     text-align: center;
     background: none; /* Remove background */
+}
+
+
+@media (min-width: 1920px) {
+	.carousel-item > img {
+    height: 900px !important;
+}
+	
 }
 
 /*** Carousel Hero Header End ***/
