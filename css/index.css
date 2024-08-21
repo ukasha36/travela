@@ -14,6 +14,8 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+	width:95%;
+	padding-left:20px;
 }
 
 .nav-email,
@@ -135,7 +137,8 @@ height:55px !important;
 @media (min-width: 991.98px) {
 .carousel-main{
 	position:relative;
-		top:55px !important;
+		  top:55px !important;
+		height:600 !important;
    
 
 }
