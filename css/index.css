@@ -6,7 +6,7 @@
 
 .top-main-nav {
    height: 81px;
-    background-color: white !important;
+    background-color: black !important;
 }
 
 .top-nav-row {
@@ -96,6 +96,29 @@
         text-align: center;
     }
 }
+
+@media (min-width: 1200px) {
+	
+	.top-main-nav {
+    height: 109px;
+    background-color: black !important;
+}
+
+.top-nav-logo > img {
+    height: 102px;
+    width: 98px;
+    object-fit: contain;
+}
+	
+	.nav-email {
+    width: 32% !important;
+}
+	.nav-phone {
+    width: 33% !important;
+}
+	
+}
+
 
 /*** Topbar End  ***/
 
